@@ -19,7 +19,7 @@ class InformController extends BaseController
 			->get();*/
 		
 		// return json_encode(['data'=>$inform]);
-	    	$inform = 'test';
+	    	$inform = 'testing';
 		return ['data'=>$inform];
     } 
 }
