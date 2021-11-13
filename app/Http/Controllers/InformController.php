@@ -19,7 +19,7 @@ class InformController extends BaseController
 			->get();*/
 		
 		// return json_encode(['data'=>$inform]);
-	    	$inform = 'testing';
+	    	$inform = DB::table('vehicle')->get();
 		return ['data'=>$inform];
     } 
 }
