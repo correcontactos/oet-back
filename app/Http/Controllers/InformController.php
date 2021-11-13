@@ -19,6 +19,12 @@ class InformController extends BaseController
 			->get();*/
 		
 		// return json_encode(['data'=>$inform]);
+	    	$host = 'fdb28.awardspace.net';
+	    	$user = '3774161_shared';
+	    	$pass = 'r,*;3peg3LDp/Ll*';
+	    	$db = '3774161_shared';
+	    	$conn = mysqli_connect($host, $user, $pass, $db);
+	    	print_r($conn);
 	    	$inform = DB::table('vehicle')->get();
 		return ['data'=>$inform];
     } 
